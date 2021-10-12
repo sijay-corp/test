@@ -1,0 +1,25 @@
+codeowners:
+- '@group_owner'
+- '@default_user_1'
+- '@default_user_2'
+collaborators:
+- permission: push
+  username: test_push_1
+- permission: pull
+  username: test_pull_2
+labels:
+- color: CC0000
+  name: bug
+- color: 336699
+  name: feature
+settings:
+  allow_merge_commit: false
+  allow_rebase_merge: true
+  allow_squash_merge: true
+  default_branch: main
+  description: REPO DESCRIPTION
+  has_downloads: true
+  has_issues: true
+  has_wiki: true
+  homepage: https://example.github.io/
+  private: true
