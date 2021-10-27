@@ -1,0 +1,46 @@
+settings:
+  allow_merge_commit: false
+  allow_rebase_merge: true
+  allow_squash_merge: true
+  default_branch: main
+  description: REPO DESCRIPTION
+  has_downloads: true
+  has_issues: false
+  has_wiki: false
+  homepage: https://example.github.io/
+  private: true
+labels:
+  - name: bug
+    color: CCFFFF
+  - name: feature
+    color: 336699
+codeowners:
+  '*.sh': '@asafo1_nike'
+  '*.txt': '@svarak_nike'
+  '*.other': '@nike-auto/gh-config-test'
+  '*.py': '@dverv2_nike'
+autolink:
+  - key_prefix: PROJECT-
+    url_template: https://jira.nike.com/browse/PROJECT-<num>
+  - key_prefix: TEST-
+    url_template: https://jira.nike.com/browse/TEST-<num>
+collaborators:
+  - username: asafo1_nike
+    permission: admin
+  - username: svarak_nike
+    permission: admin
+  - username: dverv2_nike
+    permission: admin
+webhooks:
+  - events:
+      - pull_request
+      - repository
+      - push
+    active: false
+    config:
+      url: https://smee.io/h0ob8MKTFSwMsdB
+      content_type: json
+      secret: null
+      insecure_ssl: 0
+      toke: null
+      digest: null
