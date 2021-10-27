@@ -1,5 +1,5 @@
 repos:
-        one-more: 
-                settings:
-                        allow_merge_commit: "sometext"
+  one-more:
+    codeowners:
+      '*.py': 'sdfsfsfs'
         
