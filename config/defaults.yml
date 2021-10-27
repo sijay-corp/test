@@ -1,0 +1,19 @@
+settings:
+  allow_merge_commit: false
+  allow_rebase_merge: true
+  allow_squash_merge: true
+  default_branch: main
+  description: DEFAULT DESCRIPTION
+  has_downloads: true
+  has_issues: false
+  has_wiki: false
+  homepage: https://example.github.io/
+  private: false
+labels:
+  - name: bug
+    color: CCFFFF
+  - name: feature
+    color: 336699
+codeowners:
+  '*.sh': '@asafo1_nike'
+  '*.txt': '@wrong_user'
