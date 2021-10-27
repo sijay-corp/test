@@ -2,7 +2,7 @@ repos:
   github-configuration-nike-auto: disabled
   github-configuration-.*:
     codeowners:
-      '*.py': '@dverv2_nike'
+      '*.py': '@dvere'
     settings:
       description: REPO DESCRIPTION
       private: true
