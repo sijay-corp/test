@@ -1,0 +1,6 @@
+settings:
+  description: GROUP DESCRIPTION
+codeowners:
+  '*.txt': '@svarak_nike'
+  '*.other': '@nike-auto/gh-config-test'
+
