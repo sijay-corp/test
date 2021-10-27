@@ -1,2 +1,4 @@
 repos:
-        one-more: {}
+        one-more: {
+                test: "test"
+        }
