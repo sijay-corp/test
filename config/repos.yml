@@ -1,4 +1,5 @@
 repos:
         one-more: 
-                test: "test"
+                settings:
+                        allow_merge_commit: "sometext"
         
