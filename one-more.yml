@@ -3,7 +3,7 @@ settings:
   allow_rebase_merge: true
   allow_squash_merge: true
   default_branch: main
-  description: DEFAULT DESCRIPTION
+  description: GROUP DESCRIPTION
   has_downloads: true
   has_issues: false
   has_wiki: false
@@ -16,5 +16,5 @@ labels:
     color: 336699
 codeowners:
   '*.sh': '@asafo1_nike'
-  '*.txt': '@wrong_user'
-  '*.py': sdfsfsfs
+  '*.txt': '@svarak_nike'
+  '*.other': '@nike-auto/gh-config-test'
