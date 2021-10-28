@@ -1,5 +1,6 @@
 repos:
   one-more: disabled
+  one-.*: {}
   github-configuration-nike-auto: disabled
   github-configuration-.*:
     codeowners:
