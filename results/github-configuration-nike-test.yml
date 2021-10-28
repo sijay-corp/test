@@ -18,7 +18,7 @@ codeowners:
   '*.sh': '@asafo1_nike'
   '*.txt': '@svarak_nike'
   '*.other': '@nike-auto/gh-config-test'
-  '*.py': '@dverv2_nike'
+  '*.py': '@dvere'
 autolink:
   - key_prefix: PROJECT-
     url_template: https://jira.nike.com/browse/PROJECT-<num>
