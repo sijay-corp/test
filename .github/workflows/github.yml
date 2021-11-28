@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: echo envs
         run: |
-          echo ${{ github }}
+          echo ${{ toJson(github) }}
