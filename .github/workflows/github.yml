@@ -6,4 +6,6 @@ jobs:
     steps:
       - name: echo envs
         run: |
-          echo ${{ toJson(github) }}
+          cat << OBJECT
+          ${{ toJson(github) }}
+          OBJECT
