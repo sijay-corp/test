@@ -6,4 +6,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ github }}"
+      - name: echo envs
+        run: |
+          echo ${{ github }}
