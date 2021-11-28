@@ -4,8 +4,13 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: echo envs
+      - name: echo github
         run: |
           cat << OBJECT
           ${{ toJson(github) }}
+          OBJECT
+      - name: echo secrets
+        run: |
+          cat << OBJECT
+          ${{ toJson(secrets) }}
           OBJECT
