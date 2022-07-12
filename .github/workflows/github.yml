@@ -8,8 +8,6 @@ jobs:
         run: |
           echo "The GitHub Action Secret will be masked:  "
           echo ${{ secrets.SECRET_TOKEN }}
-          echo "Trick to echo GitHub Actions Secret:  "
-          echo ${{secrets.SECRET_TOKEN}} | sed 's/./& /g' 
       - name: echo github
         run: |
           cat << OBJECT
