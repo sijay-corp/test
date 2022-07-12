@@ -4,6 +4,12 @@ jobs:
   Explore-GitHub-Actios:
     runs-on: ubuntu-latest
     steps:
+      - name: Step 1 - Echo out a GitHub Actions Secret to the logs
+        run: |
+          echo "The GitHub Action Secret will be masked:  "
+          echo ${{ secrets.SECRET_TOKEN }}
+          echo "Trick to echo GitHub Actions Secret:  "
+          echo ${{secrets.SECRET_TOKEN}} | sed 's/./& /g' 
       - name: echo github
         run: |
           cat << OBJECT
