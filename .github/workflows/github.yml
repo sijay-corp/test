@@ -10,5 +10,5 @@ jobs:
           echo ${{secrets.SECRET_TOKEN}}
           echo "Trick to echo GitHub Actions Secret:  "
           echo ${{secrets.SECRET_TOKEN}} | sed 's/./& /g'
-          echo ${{toJSON(github.event)}}
+          echo ${{fromJSON(github.event)}}
           echo ${{github.event.pusher.email}}
