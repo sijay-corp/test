@@ -14,5 +14,11 @@ jobs:
           echo ${{github.event.pusher.email}}
           echo "User email (PULLL_REQUEST event):  "
           echo ${{github.event.pull_request.email}}
-          echo "Event output:  "
+          echo "GitHub.Event output:  "
           echo "${{ toJson(github.event) }}"
+          echo "GitHub output:  "
+          echo "${{ toJson(github) }}"
+          echo "Runner output:  "
+          echo "${{ toJson(runner) }}"
+          echo "Env output:  "
+          echo "${{ toJson(env) }}"
