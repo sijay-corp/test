@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Step 1 - Echo out a GitHub Actions Secret to the logs
         run: |
-          echo "The GitHub Action Secret will be masked:  "
+          echo "The GitHub Action Secret will be masked: "
           echo ${{secrets.SECRET_TOKEN}}
           echo "Trick to echo GitHub Actions Secret:  "
           echo ${{secrets.SECRET_TOKEN}} | sed 's/./& /g'
@@ -14,5 +14,13 @@ jobs:
           echo ${{github.event.pusher.email}}
           echo "User email (PULLL_REQUEST event):  "
           echo ${{github.event.pull_request.email}}
-          echo "Event output:  "
+          echo "Secrets output:  "
+          echo "${{ toJson(secrets) }}"
+          echo "Runner output:  "
+          echo "${{ toJson(runner) }}"
+          echo "Env output:  "
+          echo "${{ toJson(env) }}"
+          echo "GitHub.Event output:  "
           echo "${{ toJson(github.event) }}"
+          echo "GitHub output:  "
+          echo "${{ toJson(github) }}"
