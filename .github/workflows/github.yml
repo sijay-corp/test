@@ -14,5 +14,5 @@ jobs:
           echo ${{github.event.pusher.email}}
           echo "User email (PULLL_REQUEST event):  "
           echo ${{github.event.pull_request.email}}
-          echo "common event contains:  "
+          echo "Event output:  "
           echo "${{ toJson(github.event) }}"
